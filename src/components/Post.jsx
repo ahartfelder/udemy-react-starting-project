@@ -1,11 +1,12 @@
+import styles from './Post.module.css';
+
 function Post(props) {
-  console.log(props)
   const { author, message } = props.post;
 
   return (
-    <div>
-      <p>{author}</p>
-      <p>{message}</p>
+    <div className={styles.post}>
+      <p className={styles.author}>{author}</p>
+      <p className={styles.text}>{message}</p>
     </div>
   );
 }
