@@ -1,20 +1,9 @@
-import Post from './components/Post';
-
-const posts = [
-  {
-    author: "Andreas", 
-    message: "React.js is awesome!"
-  },
-  {
-    author: "Mônika", 
-    message: "I'm good at convincing people!"
-  }
-];
+import PostsList from './components/PostsList';
 
 function App() {
   return (
     <main>
-      {posts.map((post) => <Post post={post} />)}
+      <PostsList />
     </main>
   );
 }
