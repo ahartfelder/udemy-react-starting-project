@@ -1,6 +1,7 @@
 import styles from './Post.module.css';
 
-function Post({ author, body }) {
+function Post({post}) {
+  const { author, body } = post;
   return (
     <li className={styles.post}>
       <p className={styles.author}>{author}</p>
